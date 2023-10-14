@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0;
+    }
+    html,body{
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 10px solid rgb(99, 5, 45);
+    }
+    h1 {
+      background: linear-gradient(45deg,rgb(250, 1, 109), rgb(16, 3, 3));
+      color: white;
+      font-size:50px;
+      text-align:center;
+    }
+    p {
+      font-size:40px;
+    }
+    .image {
+      background-image: url("pic.jpg");
+      filter: blur(8px);
+      height: 95%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .box {
+      background-image: url("pic6.jpg");
+      background-size:50% ;
+      background-repeat: no-repeat;
+      color: rgb(99, 5, 45);
+      font-weight: bold;
+      font-size: x-large;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 60%;
+      height: 70%;
+      padding: 20px;
+      display: flex;
+      box-shadow: 10px 10px 10px 0 rgba(7, 7, 7, 0.7);
+      border-top: 8px solid rgb(99, 5, 45);
+      border-radius: 1%;
+    }
+    .col {
+      border: 10px solid rgb(209, 115, 115);
+      margin-left:8%;
+      width:600px;
+      height:700px;
+      background-color:rgb(249,221,210,0.6);
+    }
+    input {
+      margin-top:10%;
+      padding: 10px 100px;
+      text-align: left;
+      border:0;
+      border-bottom:10px dotted rgb(250, 1, 109) ;
+      background: transparent;
+      color: white;
+    }
+    label{
+        margin-left:5%;
+    }
+    .btn{
+      font-size:x-large;
+      background-color:rgb(250, 1, 109);
+      margin-left:25%;
+    }
+  </style>
 </head>
 <body>
-    <h1>hello</h1>
+  <h1>BRUSH AND BLUSH</h1>
+  <div class="image"></div>
+  <div class="box">
+    <table>
+      <tr>
+        <td>
+          <p>WELCOME TO BEAUTYBOX..!!
+            <br><br><br><br><br><br><br><br><br><br><br>
+            GET YOUR FAVOURITE BRANDS<br>
+            AT YOUR FINGER TIPS <br>
+            SAVE MONEY AND TIME<br>
+            LIVE BEAUTY MOMENTS.....<br>
+          </p>
+        </td>
+        <td>
+          <div class="col">
+              <h2 style="text-align:center;margin-top:20%;">LOGIN FORM</h2><br>
+              <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="email" id="email" name="email">
+              <br><br>
+              <label for="password">Password:&nbsp;&nbsp;</label>
+              <input type="password" id="password" name="password">
+              <br><br>
+              <input type="submit" value="Login" style="align-items: center;" class="btn">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
