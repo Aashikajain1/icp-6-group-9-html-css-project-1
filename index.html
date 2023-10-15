@@ -5,16 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmatic Shop</title>
    <link rel="stylesheet" href="./css/style.html">
+   <style>
+    .body{
+        padding: 0;
+        margin: 0;
+        background-color: white;
+    }
+    .navbar{
+        background-color:rgb(247, 189, 212,0.4) ;
+        padding: 10px;
+    }
+    .navbar-icon{
+        height: 100px;
+    }
+    .navbar-brand-name{
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .navbar-menu{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ffe6cc;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.navbar-menu:hover{
+    background-color: #fa287c;
+}
+
+html{
+      background-image: url("img/beuty.avif");
+      height: 65%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+   </style>
 </head>
 <body>
-<h1>Cosmetic Shop</h1>
-<a href="./pages/registration.html">
-    Registration
-</a>
-<a href="./pages/login.html">
-Login
-</a>
-<div>
-<img src="./img/cosmetic.png">
+<div class="navbar">
+<img src="./img/cosmetic.png" class="navbar-icon"/>
+<span class="navbar-brand-name">Beuty Box</span>
+
+<span class="navbar-menu"><a href="./pages/registration.html">Registration</a></span>
+<span class="navbar-menu"><a href="./pages/login.html">Login</a></span>
+<span class="navbar-menu"><a href="./pages/about.html">About</a></span>
+<span class="navbar-menu"><a href="./pages/category.html">Category</a></span>
+<span class="navbar-menu"><a href="./pages/service.html">Service</a></span>
+<span class="navbar-menu"><a href="./pages/contact.html">Contact</a></span>
+<span class="navbar-menu"><a href="./pages/feedback.html">Feedback</a></span>
+</div>
+  
 </body>
 </html>

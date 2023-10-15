@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        .main-heading{
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+            body{
+                background-image:  url(../img/background.jpg) ;
+                padding-left: 0;
+                margin: 0;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+        .sub-heading{
+            font-size: 40px;
+            padding-top: 20px;
+            margin-right: 100px;
+            text-align: right;
+        }
+
+     .main-container{
+        height: 470px;
+        width: 800px;
+        background-color: bisque;
+        border-radius: 20px;
+        margin: 0 auto;
+        background-image: url(../img/sideimg.png);
+        background-size: 400px 470px;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 10px 10px pink;
+        
+     }
+
+     .registration-form{
+        font-size: 15px;
+        padding-top: 5px;
+        margin-left: 470px;
+       
+     }
+
+     .btn-create{
+        border: 1px solid black;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        background-color: green;
+        padding: 5px 20px;
+        cursor: pointer;
+     }
+
+.btn-cancel{
+    border: 1px solid black;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        background-color: tomato;
+        padding: 5px 25px;cursor: pointer;
+}
+
+
+
+    </style>
+
 </head>
 <body>
-    <h1>hello</h1>
-    <h1>Registration Form</h1>
+    
+    <h1 class="main-heading">Registration Form</h1>
+    
+    <div class="main-container">
+       
+        <div class="form-container">
+            <h3 class="sub-heading">Create Account</h3>
+            <form class="registration-form">
+
+                First Name: 
+                <input type="text" placeholder="Enter your first name" require class="text-menu"><br/><br/>
+    
+                Last Name:
+                <input type="text" placeholder="Enter your last name" required><br/><br/>
+            
+                Date of Birth:
+                <input type="date"><br/><br/>
+            
+                Gender:
+                <input type="radio" name="gender" value=""male>Male
+                <input type="radio" name="gender" value=""female>Female <br/><br/>
+            
+                Email:
+                <input type="email" placeholder="Email or phone number" required><br/><br/>
+            
+                Password:
+                <input type="password" placeholder="Enter your password" required><br/><br/>
+                
+                Confirm password:
+                <input type="password" placeholder="Enter your confirm password" required><br/><br/>
+
+                <input type="checkbox" name="agree" required>
+                We are agree
+                <br/><br/>
+             
+                <button class="btn-create">Create Account</button>&nbsp;&nbsp;
+                <button class="btn-cancel">Cancel</button>
+            
+            </div>
+            </form>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
