@@ -14,20 +14,23 @@
     .navbar{
         background-color:rgb(247, 189, 212,0.4) ;
         padding: 10px;
+        flex-wrap: wrap;
+        
+    
     }
     .navbar-icon{
         height: 100px;
     }
     .navbar-brand-name{
-        font-size: 30px;
+        font-size: 40px;
         color: black;
         font-weight: bold;
-        margin-left: 10px;
+        margin-left: 20 px;
     }
     .navbar-menu{
     font-size: 20px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 50px;
     cursor: pointer;
     background-color: #ffe6cc;
     padding: 5px 20px;
@@ -35,8 +38,18 @@
 }
 .navbar-menu:hover{
     background-color: #fa287c;
+    box-shadow: 0px 0px 5px 2px #fff;
+    padding: 7px 25px;
+    transition: 0.5s;
 }
-
+.shop-img{
+width: 400px;
+margin-left: 300px;
+margin-top: 60px;
+}
+.product-type{
+    margin-left: 300px;
+}
 html{
       background-image: url("./img/beuty.jpeg");
       height: 65%;
@@ -44,12 +57,40 @@ html{
       background-repeat: no-repeat;
       background-size: cover;
     }
+    @media only screen and (max-width:600px){
+        html{
+      background-image: url("./img/beuty.jpeg");
+      height: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } 
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-menu{
+        display: block;
+        margin: 10px;
+        width: 100%;
+        text-align: center;
+        
+    }
+    }
+    @media only screen and (mix-width: 601px) and (max-width:800px){
+        .navbar-menu{
+        display: block;
+        margin: 10px;
+        width: 70%;
+        text-align: center;
+        
+    }
+    } 
    </style>
 </head>
 <body>
 <div class="navbar">
 <img src="./img/cosmetic.png" class="navbar-icon"/>
-<span class="navbar-brand-name">BEAUTY BOX</span>
+<span class="navbar-brand-name">Beauty Box</span>
 
 <span class="navbar-menu"><a href="./pages/registration.html">Registration</a></span>
 <span class="navbar-menu"><a href="./pages/login.html">Login</a></span>
@@ -59,6 +100,9 @@ html{
 <span class="navbar-menu"><a href="./pages/contact.html">Contact</a></span>
 <span class="navbar-menu"><a href="./pages/feedback.html">Feedback</a></span>
 </div>
-  
+<div>
+<img src="./img/cream.png" class="shop-img"/>
+</div>
+  </div>
 </body>
 </html>
