@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>services</title>
-    <style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Responsive Services Section</title>
+<!-- Font Awesome CDN-->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+<!-- Google Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/e1dfaab171.js"crossorigin="anonymous"></script>
 
-  .sevice{
-            color:black;
-            background-color:palevioletred;
-            margin:10px;
-            font-size:20px;
-            padding:30px;
-            height: 300px;
-            width: 400px;
-            border-radius: 10px;
-            border: solid 1px white;
-        
-  }
-  .container{
-            
-            height: 2000px;
-            width: 100%;
-            background-color:pink;
-            display:flex;
-            flex-direction:column;
-            padding:5px;
-            border-radius: 5px;
-            align-items: center;
-            justify-content: center;
-            
-  }
-  
-</style>
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1 style="justify-content: center;background-color:darkmagenta;text-align:center;">Services</h1>
-<div class="container">
-    <div class="sevice"free shipping>
-     <img src="../img/shipping.png">
-     <h3>Free Shipping</h3>
-     <P>above Rs.299</P>
+<section>
+  <div class="row">
+    <h2 class="section-heading">Services</h2>
+  </div>
+  <h1>Welcome To Beauty Blush</h1>
+        <br>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-car"></i>
+        </div>
+        <h3>FREE SHIPPING</h3>
+        <p>Above Rs.499</p>
+      </div>
     </div>
-    <div class="sevice"Easy return>
-     <img src="../img/return.png">
-     <h3>Easy Return</h3>
-     <P>15 days</P>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-house"></i>
+        </div>
+        <h3> EASY RETURNS</h3>
+                 <p>15 days</p>
+      </div>
     </div>
-    <div class="sevice"100% Authentic>
-     <img src="../img/authentic.png">
-     <h3>100% Authentic</h3>
-     <P>product source directly</P>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fa-regular fa-diamond-turn-right style="color: #ff57e0; ></i>
+        </div>
+        <h3>100% AUTHENTIC</h3>
+                   <p>Products Sourced Directly</p>
+      </div>
     </div>
-    <div class="sevice"10 + brands>
-     <img src="../img/brands.png">
-     <h3>10 + Brands</h3>
-     <P>1 l products</P>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fa-sharp fa-light fa-tag"></i>
+        </div>
+        <h3>2100+</h3>
+                   <p>1.3 l Products</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-dollar"></i>
+        </div>
+        <h3>REASONABLE PRICE</h3>
+        <p>
+          Low Range
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-broom"></i>
+        </div>
+        <h3>NATURAL PRODUCTS</h3>
+        <p>
+          Beuty Product
+        </p>
+      </div>
     </div>
   </div>
+</section>
+<style type="text/css">
+  * {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+section {
+height: 100vh;
+width: 100%;
+display: grid;
+place-items: center;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+.column {
+width: 100%;
+padding: 0 1em 1em 1em;
+text-align: center;
+}
+.card {
+width: 100%;
+height: 100%;
+padding: 2em 1.5em;
+background: linear-gradient(#ffffff 50%, #E84FA0  50%);
+background-size: 100% 200%;
+background-position: 0 2.5%;
+border-radius: 5px;
+box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+cursor: pointer;
+transition: 0.5s;
+}
+h3 {
+font-size: 20px;
+font-weight: 600;
+color: #1f194c;
+margin: 1em 0;
+}
+p {
+color: #575a7b;
+font-size: 15px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+}
+.icon-wrapper {
+background-color: #F7AAD5;
+position: relative;
+margin: auto;
+font-size: 30px;
+height: 2.5em;
+width: 2.5em;
+color: #ffffff;
+border-radius: 50%;
+display: grid;
+place-items: center;
+transition: 0.5s;
+}
+.card:hover {
+background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+background-color: #ffffff;
+color: #E84FA0 ;
+}
+.card:hover h3 {
+color: #ffffff;
+}
+.card:hover p {
+color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+section {
+padding: 0 2em;
+}
+.column {
+flex: 0 50%;
+max-width: 50%;
+}
+}
+@media screen and (min-width: 992px) {
+section {
+padding: 1em 3em;
+}
+.column {
+flex: 0 0 33.33%;
+max-width: 33.33%;
+}
+}
+</style>
 </body>
 </html>
