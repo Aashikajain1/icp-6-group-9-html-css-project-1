@@ -1,14 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Online Shoppin</title>
-	<link rel="stylesheet" type="text/css" href="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\css\style2.css">
+	<title>Online Shopping</title>
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    background:linear-gradient rgb(250, 1, 109);
+}
+header{
+	width: 100%;
+	height: 100vh;
+}
+html{
+	scroll-behavior: smooth;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    
+}
+
+.logo{
+	font-size: 50px;
+	font-weight: bold;
+}
+.menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 20px;
+	margin: 5px;
+	font-weight: bold;
+
+}
+.menu a:last-child{
+	background: black;
+	color: white;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style:preserve-3d ;
+	transform-origin: center;
+	perspective: 2000px;
+}
+.left{
+	margin-top: 30px;
+	flex-basis: 50%;
+	animation: animate 3s linear infinite;
+
+}
+@keyframes animate{
+	0%{
+		transform: scale(1.1);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+.right{
+	flex-basis: 50%;
+	max-width: 400px;
+	margin-left: 100px;
+}
+.right h1{
+	font-size: 50px;
+}
+.right p{
+	font-size: 25px;
+	margin: 20px 0px;
+}
+button{
+	background: black;
+	color: white;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+.right img{
+	width: 75px;
+	height: 30px;
+}
+#featured{
+	padding: 50px 0px;
+	font-size: 50px;
+	text-align: center;
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	grid-auto-rows: minimum(200px,auto);
+	grid-gap: 1em;
+	justify-content: center;
+
+}
+.wrapper>div{
+	border:1px solid grey;
+	position: relative;
+}
+.wrapper> div img{
+	width: 100%;
+	overflow: hidden;
+}
+.box1{
+	grid-row: 1/3;
+	grid-column: 1/3;
+}
+.price{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	color: white;
+	font-size: 20px;
+
+}
+.wrapper>div img:hover{
+	transform: scale(1.2);
+	transition: 0.4s linear;
+}
+#man{
+	padding: 80px 0px;
+}
+.man-row{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+.man-box{
+	flex-basis: 15%;
+	box-shadow: 2px 3px 5px grey;
+	padding: 10px;
+	text-align: center;
+}
+.man-box{
+	width: 100%;
+}
+.man-box h2{
+	margin: 20px 0px;
+}
+.man-box h3{
+	background: black;
+	color: white;
+	padding: 10px;
+}
+.man-box:hover{
+	transform: translateY(-20px);
+	transition: 0.4s ease;
+}
+.man-box img{
+	width: 100%;
+	margin: auto;
+}
+#footer img{
+	width: 75px;
+	height: 30px;
+}
+#footer h2{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: black;
+	color: white;
+	padding: 10px;
+}
+</style>
 </head>
 <body>
 	<header id="home">
 		<nav>
-			<div class="logo">E-Shop</div>
+			<div class="logo">BEAUTY AND BLUSH</div>
 			<div class="menu">
 				<a href="#home">Home</a>
 				<a href="#featured">Featured</a>
@@ -34,27 +211,27 @@
 		<div class="wrapper">
 		<div class="box1">
 			<a href="" target="_blank">
-			<img src=""></a>
+			<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\About-Us.png"></a>
 			<div class="price">price:$50</div>
 		</div>
 		<div>
 			<a href="" target="_blank">
-			<img src=""></a>
+			<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b2.jpg"></a>
 			<div class="price">price:$35</div>
 		</div>
 		<div>
 			<a href="" target="_blank">
-			<img src=""></a>
+			<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b5.jpg"></a>
 			<div class="price">price:$45</div>
 		</div>
 		<div>
 			<a href="" target="_blank">
-			<img src=""></a>
+			<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b9.jpg"></a>
 			<div class="price">price:$40</div>
 		</div>
 		<div>
 			<a href="" target="_blank">
-			<img src="">
+			<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b6.jpg">
 			<div class="price">price:$30</div>
 		</div>
 	</div>
@@ -62,27 +239,32 @@
 	<section id="man">
 		<div class="man-row">
 			<div class="man-box">
-				<img src="">
+				<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b2.jpg">
 				<h2>Oraflame<br>$124.99</h2>
 				<h3>Add to Cart</h3>
 			</div>
 			<div class="man-box">
-				<img src="">
+				<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b3.jpg">
 				<h2>Oraflame<br>$145.99</h2>
 				<h3>Add to Cart</h3>
 			</div>
 			<div class="man-box">
-				<img src="">
+				<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b4.jpg">
 				<h2>Oraflame<br>$124.99</h2>
 				<h3>Add to Cart</h3>
 			</div>
 			<div class="man-box">
-				<img src="">
+				<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b3.jpg">
 				<h2>Oraflame<br>$145.99</h2>
 				<h3>Add to Cart</h3>
 			</div>
 			<div class="man-box">
-				<img src="">
+				<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b2.jpg">
+				<h2>Oraflame<br>$124.99</h2>
+				<h3>Add to Cart</h3>
+			</div>
+			<div class="man-box">
+				<img src="C:\Users\hp\Desktop\icp-6-group-9-html-css-project-1\img\b4.jpg">
 				<h2>Oraflame<br>$124.99</h2>
 				<h3>Add to Cart</h3>
 			</div>
@@ -90,7 +272,7 @@
 	</section>
 	<section id="footer">
 		<h2>Developed By ICP GROUP-6</h2>
-		<img src="C:\Users\hp\Downloads\google.jpeg">
+		
 	</section>
 </body>
 </html>
