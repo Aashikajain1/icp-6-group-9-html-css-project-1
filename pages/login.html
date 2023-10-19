@@ -15,6 +15,35 @@
       font-family: Arial, Helvetica, sans-serif;
       border:10px solid rgb(101, 40, 50);
         }
+        nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    
+}
+
+
+.logo{
+	font-size: 50px;
+	font-weight: bold;
+} 
+.menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 20px;
+	margin: 5px;
+	font-weight: bold;
+
+}
+.menu a:last-child{
+	background: black;
+	color: white;
+}  
 
     h1 {
       color: white;
@@ -67,6 +96,18 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div class="logo">Login</div>
+    <div class="menu">
+       <a href="./../index.html">Home</a>
+       <a href="./../pages/about.html">About</a>
+       <a href="./../pages/registration.html">Registration</a>
+       <a href="./../pages/contact.html">Contact</a>
+       <a href="./../pages/feedback.html">Feedback</a>
+       <a href="./../pages/service.html">Service</a>
+       <a href="#shop">Login</a>
+    </div>
+ </nav>
   <div class="box">
     <div class="col">
       <h2 style="text-align:center;margin-top:10%;">LOGIN FORM</h2><br>
