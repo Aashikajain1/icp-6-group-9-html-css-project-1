@@ -25,11 +25,6 @@
 	align-items: center;
     
 }
-
-.logo{
-	font-size: 50px;
-	font-weight: bold;
-}
 .menu a{
 	text-decoration: none;
 	font-size: 20px;
@@ -121,17 +116,35 @@
         tr td{
             padding-top: 20px;
         }
+        .btn-cancel{
+    border: 1px solid black;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        margin: 20px;
+        background-color: tomato;
+        padding: 5px 25px;
+        cursor: pointer;
+}
 
+.btn-account:hover{
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(2, 202, 2);
+    box-shadow: 0 0 10px 5px grey;
+    padding: 8px 28px;
+
+}
     </style>
 </head>
 <body>
     <nav>
-        <div class="logo">Contact</div>
+        
         <div class="menu">
             <a href="./../index.html">Home</a>
             <a href="./../pages/registration.html">Registration</a>
             <a href="./../pages/login.html">Login</a>
-            <a href="./../pages/about.html">AboutUs</a>
+            <a href="./../pages/about.html">About</a>
             <a href="./../pages/feedback.html">Feedback</a>
             <a href="./../pages/service.html">Service</a>
             <a href="#shop">ContactUs</a>
@@ -167,7 +180,7 @@
           </div>
            <label>Message</label>
             <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit">SEND</button>
+            <a href="./feedback.html" class="btn-cancel">Send</a>
           </form>
             </div>
             <div class="contact-right">
