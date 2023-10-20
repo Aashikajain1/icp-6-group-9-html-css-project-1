@@ -9,7 +9,35 @@
         margin: 0;
         background-color: white;
     }
+    nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    
+}
 
+
+.logo{
+	font-size: 50px;
+	font-weight: bold;
+} 
+.menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 20px;
+	margin: 5px;
+	font-weight: bold;
+
+}
+.menu a:last-child{
+	background: black;
+	color: white;
+}
     .navbar{
         background-color:#f7bdd4;
         text-align: center;
@@ -150,7 +178,18 @@
    
 </style>
 <body>
-
+    <nav>
+        <div class="logo">Product</div>
+        <div class="menu">
+           <a href="./../index.html">Home</a>
+           <a href="./../pages/about.html">About</a>
+           <a href="./../pages/registration.html">Registration</a>
+           <a href="./../pages/contact.html">Contact</a>
+           <a href="./../pages/feedback.html">Feedback</a>
+           <a href="./../pages/service.html">Service</a>
+           <a href="#shop">Category</a>
+        </div>
+     </nav>
     <div>
     <h1 class="navbar">Anyday Anywhere Purchase A Glowing Skin To Shop Here..👇</h1>
     </div>
