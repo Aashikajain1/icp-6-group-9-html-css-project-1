@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html> 
+<link rel="stylesheet" href="../css/style.css">
 <head>
   <style>
-    *{
+    * {
       box-sizing: border-box;
       padding: 0%;
       margin: 0;
     }
-    html,body{
+    html,
+    body {
       height: 100%;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      border: 10px solid rgb(99, 5, 45);
-    }
+      border:10px solid rgb(101, 40, 50);
+        }
+        nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    
+}
+
+
+.logo{
+	font-size: 50px;
+	font-weight: bold;
+} 
+.menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 20px;
+	margin: 5px;
+	font-weight: bold;
+
+}
+.menu a:last-child{
+	background: black;
+	color: white;
+}  
+
     h1 {
-      background: linear-gradient(45deg,rgb(250, 1, 109), rgb(16, 3, 3));
       color: white;
-      font-size:30px;
-      text-align:center;
+      font-size: 30px;
+      text-align: center;
     }
     p {
-      font-size:25px;
-    }
-    .image {
-      background-image: url("../img/pic.jpg");
-      filter: blur(8px);
-      height: 95%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      font-size: 25px;
     }
     .box {
-      background-image: url("../img/pic6.jpg");
-      background-size:50% ;
-      background-repeat: no-repeat;
       color: rgb(99, 5, 45);
       font-weight: bold;
       font-size: x-large;
@@ -41,70 +61,64 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 2;
-      width: 60%;
-      height: 70%;
+      width:500px;
+      height:500px;
       padding: 20px;
       display: flex;
       box-shadow: 10px 10px 10px 0 rgba(7, 7, 7, 0.7);
-      border-top: 8px solid rgb(99, 5, 45);
-      border-radius: 1%;
+      border-left: 8px solid rgb(238, 20, 114);
+      border-right: 8px solid rgb(32, 1, 14);
+      border-top-left-radius:20%;
+      border-bottom-right-radius:20%;
     }
     .col {
-      border: 10px solid rgb(209, 115, 115);
-      margin-left:20%;
-      width:400px;
-      height:450px;
-      background-color:rgb(249,221,210,0.6);
+      margin-left:5%;
+      width: 400px;
+      height: 450px;
     }
     input {
-      margin-top:4%;
+      margin-top: 4%;
       padding: 10px 100px;
       text-align: left;
-      border:0;
-      border-bottom:10px dotted rgb(250, 1, 109) ;
+      border: 0;
+      border-bottom: 5px solid rgb(250, 1, 109);
       background: transparent;
       color: white;
     }
-    label{
-        margin-left:5%;
+    label {
+      margin-left: 5%;
     }
-    .btn{
-      font-size:large;
-      background-color:rgb(250, 1, 109);
-      margin-left:20%;
+    .btn {
+      font-size: large;
+      background-color: rgb(250, 1, 109);
+      margin-left: 20%;
     }
   </style>
 </head>
 <body>
-  <h1>BRUSH AND BLUSH</h1>
-  <div class="image"></div>
+  <nav>
+    <div class="logo">Login</div>
+    <div class="menu">
+       <a href="./../index.html">Home</a>
+       <a href="./../pages/about.html">About</a>
+       <a href="./../pages/registration.html">Registration</a>
+       <a href="./../pages/contact.html">Contact</a>
+       <a href="./../pages/feedback.html">Feedback</a>
+       <a href="./../pages/service.html">Service</a>
+       <a href="#shop">Login</a>
+    </div>
+ </nav>
   <div class="box">
-    <table>
-      <tr>
-        <td>
-          <p>WELCOME TO BEAUTYBOX..!!
-            <br><br><br><br><br><br><br><br><br><br>
-            GET YOUR FAVOURITE BRANDS<br>
-            AT YOUR FINGER TIPS <br>
-            SAVE MONEY AND TIME<br>
-            LIVE BEAUTY MOMENTS.....<br>
-          </p>
-        </td>
-        <td>
-          <div class="col">
-              <h2 style="text-align:center;margin-top:10%;">LOGIN FORM</h2><br>
-              <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="email" id="email" name="email">
-              <br><br>
-              <label for="password">Password:&nbsp;&nbsp;</label>
-              <input type="password" id="password" name="password">
-              <br><br>
-              <input type="submit" value="Login" style="align-items: center;" class="btn">
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div class="col">
+      <h2 style="text-align:center;margin-top:10%;">LOGIN FORM</h2><br>
+      <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+      <label for="password">Password:&nbsp;&nbsp;</label>
+      <input type="password" id="password" name="password">
+      <br><br>
+      <input type="submit" value="Login" style="align-items: center;" class="btn">
+    </div>
   </div>
 </body>
 </html>

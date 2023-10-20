@@ -8,45 +8,36 @@
     <style>
 
        body{
-                background-color: pink;
+                background-color: white;
                 padding-left: 0;
                 margin: 0;
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
-
-        .main-heading{
-            font-size: 50px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+            
 
         .sub-heading{
             font-size: 40px;
-            padding-top: 20px;
-            margin-right: 100px;
-            text-align: right;
+            padding-top:20px ;
+            margin-right:px ;
+            text-align: center;
         }
 
-     .main-container{
-        height: 470px;
-        width: 800px;
+     .form-container{
+        height: 540px;
+        width: 600px;
         background-color: bisque;
         border-radius: 20px;
-        margin-top: 100px;
+        margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
-        background-image: url(../img/sideimg.png);
-        background-size: 400px 470px;
-        background-repeat: no-repeat;
         box-shadow: 0 0 15px 5px gray;
-        
      }
 
      .registration-form{
-        font-size: 15px;
+        font-size:20px ;
         padding-top: 5px;
-        margin-left: 470px;
+        margin-left: 150px;
        
      }
 
@@ -55,7 +46,7 @@
      }
 
      .text-menu:hover{
-        font-size: 14px;
+        font-size: 18px;
         box-shadow: 0 0 5px 1px rgb(155, 155, 155);
      }
 
@@ -74,26 +65,27 @@
         border-radius: 20px;
         color: white;
         font-weight: bold;
+        margin: 20px;
         background-color: tomato;
         padding: 5px 25px;
         cursor: pointer;
 }
 
 .btn-account:hover{
-    font-size: 17px;
-    border-radius: 15px;
+    font-size: 20px;
+    border-radius: 20px;
     background-color: rgb(2, 202, 2);
     box-shadow: 0 0 10px 5px grey;
-    padding: 5px 20px;
+    padding: 8px 28px;
 
 }
 
 .btn-cancel:hover{
-    font-size: 17;
-    border-radius: 15px;
+    font-size: 20px;
+    border-radius: 20px;
     background-color: red;
     box-shadow: 0 0 10px 5px gray;
-    padding:8px 30px ;
+    padding:8px 35px ;
 }
 
 @media only screen and (max-width:600px){
@@ -101,9 +93,9 @@
 
         background-color:pink;
      }
-    .main-container{
-        height: 390px;
-        width: 520px;
+    .form-container{
+        height: 425px;
+        width:390px;
         margin-top: 100px; 
         margin-left: auto;
         margin-right: auto;
@@ -112,13 +104,13 @@
      }
 
      .registration-form{
-        font-size: 13px;
+        font-size: 15px;
         padding-bottom: 30px;
-        margin-left: 280px;
+        margin-left: 80px;
      }
 
      .text-menu{
-        font-size: 9px;
+        font-size: 12px;
 
      }
 
@@ -126,29 +118,27 @@
         padding: 5px 13px;
      }
 
-     .btn-account:hover{
-    font-size: 13px;
-    padding: 5px 13px;
-
-}
-
 .btn-account:hover{
-    font-size: 13px;
-    padding: 5px 13px;
+    font-size: 15px;
+    padding: 5px 16px;
 
 }
 
 .btn-cancel:hover{
-    font-size: 13;
-    padding:5px 25px ;
+    font-size: 15px;
+    padding:5px 20px ;
 }
 
     .sub-heading{
         font-size: 30px;
             padding-top: 10px;
             margin-right: 30px;
-            text-align: right;
+            text-align: center;
           
+    }
+
+    .text-menu:hover{
+      font-size: 13px;
     }
 
 }
@@ -157,20 +147,20 @@
       body{
         background-color: pink;
       }
-    .main-container{
+    .form-container{
         height: 445px;
-        width: 610px;
+        width: 500px;
         margin-top: 80px; 
         margin-left: auto;
         margin-right: auto;
-        background-size: 300px 445px;
+        
         
      }
 
      .registration-form{
         font-size: 15px;
         padding-bottom: 30px;
-        margin-left: 333px;
+        margin-left: 110px;
      }
 
      .text-menu{
@@ -182,7 +172,7 @@
         font-size: 35px;
             padding-top: 10px;
             margin-right: 50px;
-            text-align: right;
+            text-align: center;
           
     }
 
@@ -200,9 +190,7 @@
 
 </head>
 <body>
-    
-    <div class="main-container">
-       
+   
         <div class="form-container">
             <h3 class="sub-heading">Create Account</h3>
             <form class="registration-form">
@@ -237,10 +225,9 @@
                 <a href="login.html" class="btn-account">Create Account</a>&nbsp; &nbsp;
                 <a href="../index.html" class="btn-cancel">Cancel</a>
             
-            </div>
+        
             </form>
         </div>
-    </div>
     
     
 </body>
