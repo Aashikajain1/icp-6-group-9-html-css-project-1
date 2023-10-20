@@ -8,9 +8,33 @@
     <style>
 
        body{
-                background-color: white;
+                background-color:white;
                 padding-left: 0;
                 margin: 0;
+                border: 20px solid  rgb(99, 5, 45);
+                font-size:100% ;
+            } 
+
+
+     .navbar{
+       
+        height: 561px;
+        width: 520px;
+        background-color: bisque;
+        border-radius: 20px;
+        border: 2px solid #ff3399;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 13px 13px 0px 0px #ff0066;
+     }
+
+     .sub-heading{
+            font-size: 43px;
+            padding-top:-10px ;
+           color: #ff0066;
+           font-weight: bold;
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
@@ -18,30 +42,20 @@
 
         .sub-heading{
             font-size: 40px;
-            padding-top:20px ;
-            margin-right:px ;
+            padding-top:px ;
+            margin-right:0px ;
             text-align: center;
         }
 
-     .form-container{
-        height: 540px;
-        width: 600px;
-        background-color: bisque;
-        border-radius: 20px;
-        margin-top: 60px;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 0 0 15px 5px gray;
-     }
-
      .registration-form{
         font-size:20px ;
-        padding-top: 5px;
-        margin-left: 150px;
+        padding-top: 0px;
+        margin-left: 120px;
        
      }
 
      .text-menu{
+      font-size: 17px;
         cursor: pointer;
      }
 
@@ -91,12 +105,14 @@
 @media only screen and (max-width:600px){
      body{
 
-        background-color:pink;
+        background-color:white;
+
      }
-    .form-container{
-        height: 425px;
-        width:390px;
-        margin-top: 100px; 
+    .navbar{
+        height: 440px;
+        width:400px;
+        margin-top: 80px; 
+        margin-bottom: 80px;
         margin-left: auto;
         margin-right: auto;
         background-size: 260px 390px;
@@ -145,15 +161,15 @@
 
 @media screen and (min-width:601px) and (max-width:800px){
       body{
-        background-color: pink;
+        background-color: white;
       }
-    .form-container{
-        height: 445px;
-        width: 500px;
-        margin-top: 80px; 
+    .navbar{
+        height: 460px;
+        width: 460px;
+        margin-top: 70px; 
+        margin-bottom: 70px;
         margin-left: auto;
         margin-right: auto;
-        
         
      }
 
@@ -173,25 +189,55 @@
             padding-top: 10px;
             margin-right: 50px;
             text-align: center;
-          
-    }
+     }
+
 
 }
 
 @media screen and (min-width:801px) and (max-width:1200px){
 
    body{
-    background-color: pink;
+    background-color: white;
    }
 
+   .navbar{
+        height: 560px;
+        width: 500px;
+        margin-top: 25px; 
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+     }
+
+     .registration-form{
+        font-size:20px ;
+        padding-top: -10px;
+        margin-left: 90px;
+       
+     }
+
+     .text-menu{
+      font-size: 17px;
+
+
 }
+
+
+
+}
+
 
  </style>
 
 </head>
 <body>
+
+    
+        <div class="navbar">
    
-        <div class="form-container">
+       
             <h3 class="sub-heading">Create Account</h3>
             <form class="registration-form">
 
